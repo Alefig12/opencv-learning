@@ -1,4 +1,4 @@
-# Opencv learning
+# OpenCV learning roadmap
 
 Here I will document my OpenCV learning path, feel free to follow this roadmap for you to learn OpenCV! 
 
