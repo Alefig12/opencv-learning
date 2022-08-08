@@ -1,6 +1,6 @@
 import cv2
 
-img = cv2.imread('day1\input_assets\img.jpg', 0) # 0 if grayscale, 1 default
+img = cv2.imread('input_assets\img.jpg', 0) # 0 if grayscale, 1 default
 
 cv2.imshow("Image", img)
 

@@ -1,6 +1,6 @@
 import cv2
 
-cap = cv2.VideoCapture("day1/input_assets/vid.mp4") # 0 for camera
+cap = cv2.VideoCapture("input_assets/vid.mp4") # 0 for camera
 
 # out = cv2.VideoWriter('day1\output_assets\ouput_video.avi', cv2.VideoWriter_fourcc('M','J','P','G'), 20, (640, 480))
 while True:
