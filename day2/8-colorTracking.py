@@ -59,7 +59,7 @@ def drawMatches(mask,color):
 
     for c in cnts:
         a = cv2.contourArea(c)
-        if a>2000:
+        if a>1000:
 
             #Calculate moments to get center
             M = cv2.moments(c)
