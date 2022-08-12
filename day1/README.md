@@ -4,13 +4,13 @@
 
 The most basic thing you can do in OpenCV and the start of many programs, reading and writing images to files, also learning how to read image directly in grayscale.
 
-<img src="output_assets/grayscale.jpg" width = 400/>
+<img src="../output_assets/grayscale.jpg" width = 400/>
 
 ## 2. vidReadWrite
 
 We learned how to read and write images, now time to learn how to read and write videos back to files.
 
-<img src="output_assets/gifs/output_video.gif"/>
+<img src="../output_assets/gifs/output_video.gif"/>
 
 ## 3. rgbTesting
 
