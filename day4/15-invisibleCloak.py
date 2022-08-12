@@ -22,7 +22,7 @@ while True:
         hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
 
         mask = cv2.inRange(hsv, lower_blue, upper_blue)
-        #cv2.imshow('a', mask)
+  
         mask = cv2.medianBlur(mask, 15)
 
 
