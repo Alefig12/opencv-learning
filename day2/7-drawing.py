@@ -13,6 +13,10 @@ def showimg(img):
 # FONT_HERSHEY_COMPLEX SMALL=5
 # FONT_HERSHEY_SCRIPT_SIMPLEX=6
 # FONT_HERSHEY_SCRIPT_COMPLEX=7
+
+fourcc = cv2.VideoWriter_fourcc(*'mp4v')
+out = cv2.VideoWriter('output_assets/outputDrawing.mp4',fourcc, 3.33, (600,600))
+
 waitTime= 300
 f = 0
 while True:
@@ -39,11 +43,12 @@ while True:
     cv2.putText(img,"OpenCV Test",(340+f*10,90),f,1,(0,0,0),2,cv2.LINE_AA)
     cv2.putText(img,"OpenCV Test",(340+f*10,90),f,1,(255,255,255),1,cv2.LINE_AA)
     cv2.imshow('Image', img)
+    out.write(img)
     f+=1
     if f == 8:
         f = 0
     
-
+out.release()
 
     
 

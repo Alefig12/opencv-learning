@@ -2,6 +2,9 @@ import cv2
 
 img = cv2.imread('input_assets\coins.jpg')
 
+fourcc = cv2.VideoWriter_fourcc(*'mp4v')
+out = cv2.VideoWriter('output_assets/outputCounterThresh.mp4',fourcc, 3.33, (290,291))
+
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
 #Find inverted threshold
@@ -30,6 +33,7 @@ for c in cnts:
         cv2.putText(img,str(n),(cX,cY),0,1,(0,0,255),2,cv2.LINE_AA)
 
         cv2.imshow('img', img)
+        out.write(img)
         cv2.waitKey(0)
         n+=1
 
