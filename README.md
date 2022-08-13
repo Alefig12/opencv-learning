@@ -7,6 +7,7 @@ Here I will document my OpenCV learning path, feel free to follow this roadmap f
 * [Day 2: Learning about contours, drawing functions and color tracking](#Day-2)
 * [Day 3: Image operations and object counter with different methods](#Day-3)
 * [Day 4: Object counter with another method, movement detector and making myself invisible](#Day-4)
+* [Day 5: Face detector and shape-color detector](#Day-5)
 
 ## Description of what I learnt each day.
 
@@ -27,3 +28,9 @@ Today was about some image operations like adding images, substracting them and 
 ### [Day 4](day4)
 
 These programs were all about experimentations of the many things we can achieve using OpenCV with simple image manipulation. Following the last day, I made an object counter but this time based on color detection then a basic movement detector and finally a program that can make myself invisible using an invisibility cloak!
+
+
+### [Day 5](day5)
+
+An introduction to haar cascades and OpenCV's pre-trained models, this one is a face detector, also a program that identifies shape and its color and writes it on top of it.
+
