@@ -35,7 +35,7 @@ Here we write a program that counts objects on an image performing a thresholdin
 ## 12. counterWithCanny
 
 
-Another program that counts object bus based on edge detection with canny.
+Another program that counts objects but based on edge detection with canny.
 
 <p float="left">
   <img src="https://user-images.githubusercontent.com/62145703/184466511-723153c1-8122-4925-bef7-0bdf7bffd380.png" width="300" />

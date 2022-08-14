@@ -2,8 +2,10 @@ import cv2
 
 
 
-faceDet = cv2.CascadeClassifier('day5\haarcascade_frontalface_default.xml')
+
 img = cv2.imread(r'input_assets\faces.jpg')
+
+faceDet = cv2.CascadeClassifier('input_assets\haarcascade_frontalface_default.xml')
 
 
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
