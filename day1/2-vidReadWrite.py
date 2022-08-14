@@ -1,8 +1,9 @@
 import cv2
 
-cap = cv2.VideoCapture("input_assets/vid.mp4") # 0 for camera
+cap = cv2.VideoCapture(0) # 0 for camera
 
-# out = cv2.VideoWriter('output_assets\ouput_video.avi', cv2.VideoWriter_fourcc('M','J','P','G'), 20, (640, 480))
+# fourcc = cv2.VideoWriter_fourcc(*'mp4v')
+# out = cv2.VideoWriter(r"day7\videos\me.mp4",fourcc, 30.0, (640,480)) 
 while True:
     ret, img = cap.read()
     
@@ -17,5 +18,5 @@ while True:
         break
 
 cap.release()
-#out.release()
+# out.release()
 cv2.destroyAllWindows()
