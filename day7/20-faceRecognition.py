@@ -166,7 +166,7 @@ TEST_VIDEO = r'day7\videos\test\test_mars.mp4'
 # saveFacesFromVideo('Cafe',DATAPATH,r'day7\videos\me.mp4')
 # training(DATAPATH)
 
-recognize(DATAPATH, TEST_VIDEO)
+recognize(DATAPATH, TEST_VIDEO) #Delete TEST_VIDEO if camera input
 
 
 
