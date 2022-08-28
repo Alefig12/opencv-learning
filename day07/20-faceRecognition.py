@@ -73,7 +73,7 @@ def training(dataFolder):
     print('Initializing training...')
     face_recognizer.train(faceData,np.array(labels))
 
-    face_recognizer.write('day7\eigenFaceModel.xml')
+    face_recognizer.write('day07\eigenFaceModel.xml')
     print('Model saved.')
 
 
@@ -86,7 +86,7 @@ def recognize(dataPath, testVideo = None):
 
     face_recognizer = cv2.face.EigenFaceRecognizer_create()
 
-    face_recognizer.read('day7\eigenFaceModel.xml')
+    face_recognizer.read('day07\eigenFaceModel.xml')
 
     if testVideo is None:
         cap=cv2.VideoCapture(0)
@@ -159,11 +159,11 @@ def recognize(dataPath, testVideo = None):
 
 
 
-DATAPATH = r'day7\videos\data'
-TEST_VIDEO = r'day7\videos\test\test_mars.mp4'
+DATAPATH = r'day07\videos\data'
+TEST_VIDEO = r'day07\videos\test\test_mars.mp4'
 
-# saveFacesFromVideo('Mars',DATAPATH,r'day7\videos\mars.mp4')
-# saveFacesFromVideo('Cafe',DATAPATH,r'day7\videos\me.mp4')
+# saveFacesFromVideo('Mars',DATAPATH,r'day07\videos\mars.mp4')
+# saveFacesFromVideo('Cafe',DATAPATH,r'day07\videos\me.mp4')
 # training(DATAPATH)
 
 recognize(DATAPATH, TEST_VIDEO) #Delete TEST_VIDEO if camera input
