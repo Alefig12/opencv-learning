@@ -11,6 +11,9 @@ This script counts the total number of figures of a specific color and marks it.
 
 A movement detector that checks for changes based on a static background taken from the first frames of the video.
 
+<img src="https://user-images.githubusercontent.com/62145703/187239968-e471f93b-251b-4136-a5fc-599c19f7581c.gif"/>
+
+
 
 
 ## 15. invisibleCloak
