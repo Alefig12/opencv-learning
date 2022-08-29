@@ -37,7 +37,7 @@ colors = {
         'name': 'purple'
     },
 }
-
+print('')
 def countColor(hsv,img, color):
     lower = color['lower']
     upper = color['upper']
@@ -57,6 +57,8 @@ def countColor(hsv,img, color):
     i =0
     for c in cnts:
         if cv2.contourArea(c) > 1:
+            cv2.imshow('img', img)
+            cv2.waitKey(0)
             cv2.drawContours(img,[c],0,(0,0,0),2,cv2.LINE_AA)
             #Calculating center
             M = cv2.moments(c)
@@ -66,6 +68,7 @@ def countColor(hsv,img, color):
 
             cv2.putText(img,str(i),(cX-10,cY+10),0,1,(0,0,0),2,cv2.LINE_AA)
             i+=1
+
     print('There are in total {} {} squares'.format(str(i), color['name']))
 
 
@@ -76,9 +79,7 @@ for c in colors:
 
 
 
-cv2.imshow('img', img)
 
-cv2.waitKey(0)
 
 
 

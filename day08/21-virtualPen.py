@@ -1,5 +1,3 @@
-from cgitb import small
-from turtle import color
 import cv2
 import numpy as np
 

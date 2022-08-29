@@ -34,45 +34,6 @@ for name in imgList:
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #Now in video
 
 # cap = cv2.VideoCapture(0)
