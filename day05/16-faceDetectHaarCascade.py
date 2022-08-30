@@ -33,7 +33,7 @@ while True:
 
     gray = cv2.cvtColor(frame,cv2.COLOR_BGR2GRAY)
 
-    faces = faceDet.detectMultiScale(gray, 1.1, 4) #Image, ScaleFactor and minNeighbors as parameters
+    faces = faceDet.detectMultiScale(gray, 1.1, 8) #Image, ScaleFactor and minNeighbors as parameters
 
     for (x,y,w,h) in faces:
         cv2.rectangle(frame,(x,y), (x+w, y+h),(0,255,0), 2)
