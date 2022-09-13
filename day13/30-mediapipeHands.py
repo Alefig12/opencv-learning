@@ -9,7 +9,7 @@ import mediapipe.python.solutions.hands as mp_hands
 
 cap = cv2.VideoCapture(0)
 video=[]
-with mp_hands.Hands() as hands:
+with mp_hands.Hands(max_num_hands=5) as hands:
     while True:
         ret, frame = cap.read()
         if not ret: break
